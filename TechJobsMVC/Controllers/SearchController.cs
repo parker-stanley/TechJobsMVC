@@ -18,6 +18,8 @@ namespace TechJobsMVC.Controllers
             return View();
         }
 
+        // does this default to GET or is it either or and C# figures it out when it comes to it?
+        // [HttpPost]
         public IActionResult Result(string searchType, string searchTerm)
         {
             ViewBag.columns = ListController.ColumnChoices;
